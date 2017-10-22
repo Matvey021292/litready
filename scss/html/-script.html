@@ -1,0 +1,54 @@
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+
+    (function($){
+        $(window).load(function(){
+
+            $("body").mCustomScrollbar({
+                theme:"minimal-dark"
+            });
+
+        });
+    })(jQuery);
+
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="js/form.js"></script>
+<!--<script src="js/script.min.js"></script>-->
+<script src="js/tweenlite.min.js"></script>
+<script src="js/graph.js"></script>
+
+<script>
+    var wind = $(window).width(),
+        itemsT = $(".ul0"),
+        itemsl = $(".ul1"),
+        myWidth = itemsT.width();
+
+    var trXo = 0;
+    var trXt = myWidth;
+    var myTimer = setInterval (function(){
+        trXo-=0.5;
+        trXt-=0.5;
+        itemsT.css("transform","translateX("+trXo+"px)");
+        itemsl.css("transform","translateX("+trXt+"px)");
+        if (itemsT.offset().left+itemsT.width()<0){
+            trXo = myWidth;
+        }
+        if (itemsl.offset().left+itemsl.width()<0){
+            trXt = myWidth;
+        }
+    }, 1);
+
+    $(document).ready(function(){
+        $('.place-card').css('display','none');
+    })
+</script>
+
+

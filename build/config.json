@@ -1,0 +1,18 @@
+{
+  "forms": {
+    "register_form" : {
+      "hidden" : {
+        "lastname": "unknown",
+        "age": "18",
+        "country":"",
+        "countrycode":"+",
+        "register-currency": ""
+      },
+      "modal": false
+    }
+  },
+"style" : "form { text-align: center;",
+"modal-template" : "<div id='postModal' class='modal fade' tabindex='-1' role='dialog'> <div class='modal-dialog' role='document'> <div class='modal-content'> <div class='modal-body'> <a type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></a><div class='alert' role='alert'></div></div></div></div></div>",
+"template" : "<div class='form_group--name'><label>Имя<input data-validation-type='firstname' name='firstname' placeholder='' required> <div class='error'></div></label></div><div class='form_group--name'><input data-validation-type='lastname' placeholder='Фамилия' name='lastname' value='' required> <div class='error'></div></div><div class='form_group--hidden'> <input type='hidden' data-validation-type='clickid' name='clickid'> <input type='hidden' data-validation-type='affid' name='affid'> <input type='hidden' data-validation-type='subid' name='subid'> <input data-validation-type='offerid' name='offerid' type='hidden'> <input data-validation-type='transactionid' name='transactionid' type='hidden'> </div><div class='form_group--email'><label>Email<input type='email' data-validation-type='email' name='email' placeholder='' required> <div class='error'></div></label></div><div class='form_group--country'> <input data-validation-type='country' name='country'> <div class='error'></div></div><div class='form_group--phone'> <div class='form_input--group'><label> <input data-validation-type='countrycode' name='countrycode' value='+7'>Номер телефона<input  data-validation-type='phone' name='phone' placeholder=''> <div class='error'></div></label></div></div><div class='checkbox-wrapper'> <input  class='inverted' required name='age' type='checkbox' data-validation-type='age'> <label for='age'></label> <label for='age'>Мне больше 18 лет</label> <div class='error'></div></div><div class='form_group--radio'><input class='form_group--radio-input' value='rub' id='radio-1' name='register-currency' checked='' type='radio'> <label for='radio-1'>Рубль</label> <input class='form_group--radio-input' value='usd' id='radio-2' name='register-currency' type='radio'> <label for='radio-2'>Доллар</label> <input class='form_group--radio-input' value='eur' id='radio-3' name='register-currency' type='radio'> <label for='radio-3'>Евро</label> </div><div class='form_group--button'> <button class='send-form btn btn-primary ' type='submit'><span class='button--inner'>ОТПРАВИТЬ</span> </button>midbahone.com <button type='button' class='btn btn-default close-form' data-dismiss='modal'> Назад</button> </div>"
+}
+

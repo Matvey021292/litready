@@ -1,0 +1,120 @@
+.contact_info{
+  background: $colorbg;
+  .contact_info_row{
+    margin: 40px 0 50px 0;
+  }
+  .footer_title{
+    font-size: 34px;
+    font-weight: 900;
+    color: $color;
+
+  }
+  p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin: 20px 0;
+    line-height: 1.6;
+
+  }
+  p.footer_text{
+    font-size: 19px;
+    font-weight: 300;
+    span{
+      color: $color;
+      font-weight:900;
+      font-size: 16px;
+      display: block;
+    }
+  }
+  p.small_footer_text{
+    font-size: 12px;
+  }
+  .footer_info_text{
+    font-size: 12.25px;
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #fff;
+
+
+  }
+  .line{
+    background: url("../img/linedark.png");
+    background-position: center bottom;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    padding: 0 30px;
+  }
+  .copy{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  #register_form{
+  text-align: left;
+    max-width: 400px;
+
+    label{
+      width: 100%;
+      color: #474747;
+      font-size: 13px;
+      font-weight: bold;
+      input{
+        background: transparent;
+        border: 0;
+        box-shadow:none;
+        margin-top: 10px;
+        border-bottom: 2px solid #1a1b1c;
+        color: #fff;
+        font-weight: 500;
+        font-size: 17px;
+
+
+      }
+
+    }
+
+  }
+  .form-container .invalid + .error{
+    color: #eb314f;
+    font-size: 10px;
+  }
+  #register_form.form-container .invalid{
+    color: #eb314f;
+    border-bottom: 2px solid #eb314f;
+    background-image: url(../img/error.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 7px 0;
+  }
+  #register_form.form-container .valid{
+    color: #03ac76;
+    border-bottom: 2px solid #03ac76;
+    background-image: url(../img/checked.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 7px 0;
+
+  }
+  .send-form{
+    width: 50%;
+    background: #ffcc00;
+    span{
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+  .form_group--button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+img[src="img/mastercard.svg"]{
+  max-width: 80px;
+}
+
